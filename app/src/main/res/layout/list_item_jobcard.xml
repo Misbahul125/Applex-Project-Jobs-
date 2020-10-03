@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/list_subject_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:padding="5dp"
+                    android:text="subject name"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp">
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/btnShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="170dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@android:color/white"
+                    android:src="@drawable/ic_baseline_share_24">
+                </ImageButton>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/list_job_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="job mode"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray">
+            </TextView>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_margin="10dp">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="State:"
+                       android:textSize="20sp"
+                       android:textColor="@android:color/black">
+                   </TextView>
+                   <TextView
+                       android:id="@+id/list_state"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="5dp"
+                       android:text="west bengal"
+                       android:textSize="20sp"
+                       android:textColor="@android:color/black">
+                   </TextView>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="City:"
+                       android:textSize="20sp"
+                       android:textColor="@android:color/black">
+                   </TextView>
+                   <TextView
+                       android:id="@+id/list_city"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="5dp"
+                       android:text="kolkata"
+                       android:textSize="20sp"
+                       android:textColor="@android:color/black">
+                   </TextView>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Pincode:"
+                       android:textSize="20sp"
+                       android:textColor="@android:color/black">
+                   </TextView>
+                   <TextView
+                       android:id="@+id/list_pin"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="5dp"
+                       android:text="700066"
+                       android:textSize="20sp"
+                       android:textColor="@android:color/black">
+                   </TextView>
+
+               </LinearLayout>
+
+
+
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnBookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/white"
+                    android:text="BOOKMARK POST"
+                    android:textSize="20sp">
+                </Button>
+
+                <Button
+                    android:id="@+id/btnApply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/white"
+                    android:text="APPLY"
+                    android:textSize="20sp">
+                </Button>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

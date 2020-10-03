@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Jobs</string>
+    <string-array name="Subject">
+        <item>-- Subject --</item>
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Mathematics</item>
+        <item>Science</item>
+        <item>Social Studies</item>
+    </string-array>
+</resources>
