@@ -192,4 +192,20 @@
         android:onClick="seePostedJobs"
         android:textSize="22sp"/>
 
+    <Button
+        android:id="@+id/btnHashTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="HASH TAG"
+        android:onClick="hashTag"
+        android:textSize="22sp"/>
+
 </LinearLayout>

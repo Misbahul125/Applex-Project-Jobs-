@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     Spinner spinner;
     EditText etCity,etState,etPincode,classNum,etName,etInstitution,etQualification,etFee,etRemarks;
     RadioGroup rMode,jobType;
-    Button btnApply;
+    Button btnApply,btnHashTag;
     LinearLayout linLay1,linLay2;
     TextView tvLocation;
     String City,State,Pincode,Institution,mySub;
@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         etFee=findViewById(R.id.fee);
         etRemarks=findViewById(R.id.remarks);
         btnApply=findViewById(R.id.btnApply);
+        btnHashTag=findViewById(R.id.btnHashTag);
         linLay1=findViewById(R.id.linLay1);
         linLay2=findViewById(R.id.linLay2);
         tvLocation=findViewById(R.id.location);
@@ -169,6 +170,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void seePostedJobs(View view) {
         Intent intent = new Intent(this,RecyclerViewJobs.class);
+        startActivity(intent);
+    }
+
+    public void hashTag(View view) {
+        Intent intent = new Intent(this , HashTagActivity.class);
         startActivity(intent);
     }
 }
