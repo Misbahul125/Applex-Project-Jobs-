@@ -8,4 +8,20 @@
         <item>Science</item>
         <item>Social Studies</item>
     </string-array>
+
+    <string name="enter_batch_timings">Enter Batch Timings</string>
+    <string name="time">Time</string>
+    <string name="t1">HH:MM</string>
+    <string name="to">to</string>
+    <string name="t2">HH:MM</string>
+    <string name="mon">Monday                              </string>
+    <string name="tue">   Tuesday                             </string>
+    <string name="wed">   Wednesday                           </string>
+    <string name="thurs">   Thursday                           </string>
+    <string name="fri">   Friday                              </string>
+    <string name="sat">   Saturday                            </string>
+    <string name="sun">   Sunday                              </string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="create">Create</string>
 </resources>
