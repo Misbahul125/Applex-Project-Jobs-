@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginVertical="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/address_type"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/darker_gray">
+                </TextView>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/location_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_homeAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:text="@string/radio_home_address"
+                    android:textAlignment="gravity"
+                    android:onClick="checkButton"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio_officeAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_gravity="right"
+                    android:text="@string/radio_office_address"
+                    android:textAlignment="gravity"
+                    android:onClick="checkButton"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp">
+                </RadioButton>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/pin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/hint_pin"
+                android:textSize="20sp"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray">
+            </EditText>
+
+            <EditText
+                android:id="@+id/houseNo_buildingName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/hint_house_no"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray">
+            </EditText>
+
+            <EditText
+                android:id="@+id/landmark"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/hint_landmark"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray">
+            </EditText>
+
+            <EditText
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/hint_area"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray">
+            </EditText>
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/hint_city"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:inputType="text"
+                android:textColorHint="@android:color/darker_gray">
+            </EditText>
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:hint="@string/hint_state"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="20sp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:hint="@string/hint_country"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray">
+            </EditText>
+
+            <EditText
+                android:id="@+id/full_addrress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:hint="@string/hint_address"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="20sp">
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/imgBtn_getLocation"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_my_location_50">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/imgBtn_setLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_check_70"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:background="@android:color/white">
+            </ImageButton>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

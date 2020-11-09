@@ -24,4 +24,15 @@
     <string name="on">ON</string>
     <string name="off">OFF</string>
     <string name="create">Create</string>
+    <string name="hint_pin">Enter Pincode</string>
+    <string name="hint_house_no">Enter Building name / House no. / Premises No.</string>
+    <string name="hint_landmark">Enter Any Landmark(Optional)</string>
+    <string name="hint_area">Enter Area / Locality / Street name</string>
+    <string name="hint_city">Enter City</string>
+    <string name="hint_state">Enter State</string>
+    <string name="hint_country">Enter Country</string>
+    <string name="hint_address">Enter Your Full Address</string>
+    <string name="radio_home_address">Home address</string>
+    <string name="radio_office_address">Office address</string>
+    <string name="address_type">Address Type</string>
 </resources>

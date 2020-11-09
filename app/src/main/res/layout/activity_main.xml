@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,220 +8,250 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/name"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="name of applicant"
-        android:gravity="center_horizontal"/>
-    <LinearLayout
-        android:id="@+id/linLay1"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        <Spinner
-            android:id="@+id/Spinner"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="20dp"/>
+        android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/Class"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:hint="Class"
-            android:gravity="center_horizontal"
-            />
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_marginRight="30dp"
-        android:textColor="#000000"
-        android:text="Mode"/>
-    <RadioGroup
-        android:id="@+id/mode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="name of applicant"
+                android:gravity="center_horizontal"/>
+            <LinearLayout
+                android:id="@+id/linLay1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <Spinner
+                    android:id="@+id/Spinner"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
 
-        <RadioButton
-            android:id="@+id/online"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Online"
-            android:layout_marginRight="30dp"
-            android:textSize="18sp"/>
-        <RadioButton
-            android:id="@+id/offline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="radioOffline"
-            android:text="Offline"
-            android:textSize="18sp"/>
+                <EditText
+                    android:id="@+id/Class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Class"
+                    android:gravity="center_horizontal"
+                    />
+            </LinearLayout>
 
-    </RadioGroup>
-    <TextView
-        android:id="@+id/location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Location :"
-        android:textSize="20sp"
-        android:textColor="#000000"/>
-    <LinearLayout
-        android:id="@+id/linLay2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <EditText
-            android:id="@+id/city"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:layout_marginRight="10dp"
-            android:hint="City"/>
-        <EditText
-            android:id="@+id/state"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:hint="State"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginRight="30dp"
+                android:textColor="#000000"
+                android:text="Mode"/>
+            <RadioGroup
+                android:id="@+id/mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/pincode"
-            android:layout_width="100dp"
-            android:gravity="center_horizontal"
-            android:layout_height="wrap_content"
-            android:hint="Pincode"/>
-    </LinearLayout>
+                <RadioButton
+                    android:id="@+id/online"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Online"
+                    android:layout_marginRight="30dp"
+                    android:textSize="18sp"/>
+                <RadioButton
+                    android:id="@+id/offline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="radioOffline"
+                    android:text="Offline"
+                    android:textSize="18sp"/>
+
+            </RadioGroup>
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location :"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <LinearLayout
+                android:id="@+id/linLay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="10dp"
+                    android:hint="City"/>
+                <EditText
+                    android:id="@+id/state"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:hint="State"/>
+
+                <EditText
+                    android:id="@+id/pincode"
+                    android:layout_width="100dp"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:hint="Pincode"/>
+            </LinearLayout>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Job Type"
-        android:textSize="18sp"
-        android:textColor="#000000"/>
-    <RadioGroup
-        android:id="@+id/jobType"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="Personal"
-            android:textSize="18sp"
-            />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="Institution"
-            android:onClick="radioInstitution"
-            android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Type"
+                android:textSize="18sp"
+                android:textColor="#000000"/>
+            <RadioGroup
+                android:id="@+id/jobType"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Personal"
+                    android:textSize="18sp"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Institution"
+                    android:onClick="radioInstitution"
+                    android:textSize="18sp"/>
 
-    </RadioGroup>
+            </RadioGroup>
 
-    <EditText
-        android:id="@+id/institution"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="name of institution"
-        android:gravity="center_horizontal"/>
+            <EditText
+                android:id="@+id/institution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="name of institution"
+                android:gravity="center_horizontal"/>
 
-    <EditText
-        android:id="@+id/qualification"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Qualification"
-        android:gravity="center_horizontal"
-        android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Qualification"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"/>
 
-    <EditText
-        android:id="@+id/fee"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="enter fee"
-        android:gravity="center_horizontal"
-        android:textSize="18sp"
-        />
-    <EditText
-        android:id="@+id/remarks"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:hint="remarks"/>
+            <EditText
+                android:id="@+id/fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter fee"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                />
+            <EditText
+                android:id="@+id/remarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="remarks"/>
 
-    <Button
-        android:id="@+id/btnApply"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:background="@android:color/holo_blue_dark"
-        android:textColor="#ffffff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="APPLY"
-        android:textSize="22sp"/>
+            <Button
+                android:id="@+id/btnApply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="APPLY"
+                android:textSize="22sp"/>
 
-    <Button
-        android:id="@+id/btnSeePostedJobs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:background="@android:color/holo_blue_dark"
-        android:textColor="#ffffff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="SEE POSTED JOBS"
-        android:onClick="seePostedJobs"
-        android:textSize="22sp"/>
+            <Button
+                android:id="@+id/btnSeePostedJobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="SEE POSTED JOBS"
+                android:onClick="seePostedJobs"
+                android:textSize="22sp"/>
 
-    <Button
-        android:id="@+id/btnHashTag"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:background="@android:color/holo_blue_dark"
-        android:textColor="#ffffff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="HASH TAG"
-        android:onClick="hashTag"
-        android:textSize="22sp"/>
+            <Button
+                android:id="@+id/btnHashTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="HASH TAG"
+                android:onClick="hashTag"
+                android:textSize="22sp"/>
 
-    <Button
-        android:id="@+id/btnBatchTiming"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:background="@android:color/holo_blue_dark"
-        android:textColor="#ffffff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="GO TO BATCH TIMING"
-        android:onClick="batchTiming"
-        android:textSize="22sp"/>
+            <Button
+                android:id="@+id/btnBatchTiming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="GO TO BATCH TIMING"
+                android:onClick="batchTiming"
+                android:textSize="22sp"/>
 
-</LinearLayout>
+            <Button
+                android:id="@+id/btnAddYourLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:padding="10dp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="Add your location"
+                android:onClick="addYourLocation"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

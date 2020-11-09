@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     Spinner spinner;
     EditText etCity,etState,etPincode,classNum,etName,etInstitution,etQualification,etFee,etRemarks;
     RadioGroup rMode,jobType;
-    Button btnApply,btnHashTag,btnBatchTiming;
+    Button btnApply,btnHashTag,btnBatchTiming,btnAddYourLocation;
     LinearLayout linLay1,linLay2;
     TextView tvLocation;
     String City,State,Pincode,Institution,mySub;
@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         btnApply=findViewById(R.id.btnApply);
         btnHashTag=findViewById(R.id.btnHashTag);
         btnBatchTiming = findViewById(R.id.btnBatchTiming);
+        btnAddYourLocation = findViewById(R.id.btnAddYourLocation);
         linLay1=findViewById(R.id.linLay1);
         linLay2=findViewById(R.id.linLay2);
         tvLocation=findViewById(R.id.location);
@@ -181,6 +182,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void batchTiming(View view) {
         Intent intent = new Intent(this , DaysActivity.class);
+        startActivity(intent);
+    }
+
+    public void addYourLocation(View view) {
+        Intent intent = new Intent(this , LocationActivity.class);
         startActivity(intent);
     }
 }
